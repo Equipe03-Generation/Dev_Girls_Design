@@ -1,1 +1,1 @@
-Branch Principal de Design
+Branch principal aonde serão armazenados todos os trabalhos de design já feitos.
