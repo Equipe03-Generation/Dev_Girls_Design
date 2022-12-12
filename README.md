@@ -1,1 +1,3 @@
-Branch principal aonde serão armazenados todos os trabalhos de design já feitos.
+Branch da v3
+<br>
+Versão funcional contendo todo CRUD de tema e postagem.
