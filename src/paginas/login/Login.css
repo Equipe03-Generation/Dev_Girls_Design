@@ -1,9 +1,9 @@
 .textos1{
-   font-weight: bold !important;
+   font-weight: bold;
 }
 
 .imagem{
-    background-image: url(https://cdn-icons-png.flaticon.com/512/6383/6383321.png);
+    background-image: url(img/women-web-developer-with-laptop.png);
     background-repeat: no-repeat;
     width: 100vh;
     min-height: 100vh;
@@ -13,4 +13,24 @@
 
 .text-decorator-none{
     text-decoration: none;
+}
+.rx{
+    background-color: rgb(226, 57, 226) !important;
+}
+.papel{
+    background:linear-gradient(rgba(237, 213, 245, 0.5),transparent) !important;
+    background-color: rgb(50, 4, 100) !important;
+
+}
+.branco{
+    background-color: white;
+}
+.rosa{
+    color: rgb(219, 51, 213) !important;
+}
+.bc{
+    color: white !important;
+}
+.regular{
+    font-family: 'Courier New', Courier, monospace !important;
 }
