@@ -34,3 +34,12 @@
 .regular{
     font-family: 'Courier New', Courier, monospace !important;
 }
+.imagem3{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.imagem3:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
