@@ -25,9 +25,6 @@ function Footer() {
                     </Box>
                 </Box>
                 <Box className='box2'>
-                    <Box paddingTop={1}>
-                        <Typography variant="subtitle2" align="center" gutterBottom className='textos' >© 2022 Copyright:</Typography>
-                    </Box>
                     <Box>
                         <a target="_blank" href="https://github.com/Equipe03-Generation/Dev_Girls_React">
                             <Typography variant="subtitle2" gutterBottom className='textos' align="center">Repositório do Projeto</Typography>

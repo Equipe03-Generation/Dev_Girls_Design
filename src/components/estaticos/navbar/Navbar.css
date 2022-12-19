@@ -8,20 +8,11 @@
 }
 
 .bgnav {
-    background:linear-gradient(rgba(3, 67, 67, 0.058),transparent) !important;
-    background-color: rgb(226, 57, 226) !important;
+    background-color: rgb(0, 0, 0) !important;
 }
 
 .textobranco {
     color: white;
-}
-
-.logonav{
-background-image: url(img/1-removebg-preview.png) !important;
-}
-
-.btbranco{
-    background-color: white;
 }
 
 .centro {

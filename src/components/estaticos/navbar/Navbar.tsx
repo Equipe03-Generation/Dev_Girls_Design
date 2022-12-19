@@ -39,45 +39,51 @@ function Navbar() {
         navbarComponent = <AppBar position="static">
         <Toolbar variant="dense" className='bgnav centro'>
             <Box className='cursor' >
-                <Typography variant="h5" color="inherit">
-                    Lady Debug
-                </Typography>
+                <img src="https://i.gifer.com/origin/98/981e84be64a200cbfdada5de05171031_w200.gif" height={40} alt=""/>
             </Box>
 
             <Box display="flex" justifyContent="start">
                 <Link to="/home" className="text-decorator-none">
                     <Box mx={1} className='cursor text-decorator-none'>
-                        <img src="https://cdn-icons-png.flaticon.com/512/7606/7606136.png" height={40} alt="" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/9094/9094099.png" height={40} alt="" />
                     </Box>
                 </Link>
                 <Link to="/equipe" className="text-decorator-none">
                     <Box mx={1} className='cursor text-decorator-none'>
-                        <img src="https://cdn-icons-png.flaticon.com/512/1189/1189162.png" height={40} alt="" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/5027/5027793.png" height={40} alt="" />
                     </Box>
                 </Link>
                 <Link to="/sobre" className="text-decorator-none">
                     <Box mx={1} className='cursor text-decorator-none'>
-                        <img src="https://cdn-icons-png.flaticon.com/512/4210/4210456.png" height={40} alt="" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/6488/6488588.png" height={40} alt="" />
                     </Box>
                 </Link>
                 <Link to="/posts" className="text-decorator-none">
                     <Box mx={1} className='cursor text-decorator-none'>
-                        <img src="https://cdn-icons-png.flaticon.com/512/2704/2704794.png" height={40} alt="" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/6738/6738314.png" height={40} alt="" />
                     </Box>
                 </Link>               
                 <Link to="/temas" className="text-decorator-none">
                 <Box mx={1} className='cursor text-decorator-none'>
-                    <img src="https://cdn-icons-png.flaticon.com/512/2326/2326138.png" height={40} alt="" />
+                    <img src="https://cdn-icons-png.flaticon.com/512/1443/1443029.png" height={40} alt="" />
                 </Box>
                 </Link>
                 <Link to="/formularioTema" className="text-decorator-none">
                 <Box mx={1} className='cursor text-decorator-none'>
-                    <img src="https://cdn-icons-png.flaticon.com/512/4316/4316188.png" height={40} alt="" />
+                    <img src="https://cdn-icons-png.flaticon.com/512/7588/7588927.png" height={40} alt="" />
                 </Box>
                 </Link>
               
                     <Box mx={1} className='cursor' onClick={goLogout}>
-                        <img src="https://cdn-icons-png.flaticon.com/512/4400/4400629.png" height={40} alt="" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/6488/6488629.png" height={40} alt="" />
+                    </Box>
+
+                    <Box mx={1} className='cursor'>
+                        <img src="https://ian.macky.net/pat/map/globes/earth-cloudy-256-slow.gif" height={30} alt="" />
+                    </Box>
+
+                    <Box mx={1} className='cursor'>
+                        <img src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcT1g1V8Nalm9FkR2atv7annUXbPvk5g-mWffaNxT_ItIFogl-6mC_lHNifw5Tw9-yiS" height={20} alt="" />
                     </Box>
                 
             </Box>

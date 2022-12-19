@@ -5,6 +5,7 @@ import { Box } from '@mui/material';
 
 function Sobre() {
     return (
+        <Grid className='papel'>
         <Grid justifyContent='center' alignItems='center'>
             <Box padding={3} textAlign='center'>
             <h1>Sobre o projeto Dev Girls</h1>
@@ -26,6 +27,7 @@ function Sobre() {
             
             </Box>
         </Grid>
+    </Grid>
     )
 }
 

@@ -1,11 +1,10 @@
+import { Grid } from '@mui/material';
 import React from 'react';
 import './Equipe.css';
 
-
 function Equipe() {
     return (
-        <>
-            
+        <Grid className='papel'>
             <div className='center'>
                 <h1> Equipe Desenvolvedora </h1></div>
             <div className='newspaper newspaper1 newspaper2 newspaper3'>
@@ -95,8 +94,7 @@ function Equipe() {
                         data-canonical-src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&amp;logo=github&amp;logoColor=white" />
                 </a>
             </div>
-        </>
-
+            </Grid>
 
     )
 }
