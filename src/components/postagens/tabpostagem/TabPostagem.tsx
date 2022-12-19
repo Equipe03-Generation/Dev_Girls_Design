@@ -16,7 +16,7 @@ function TabPostagem() {
       <TabContext value={value}>
         <AppBar position="static">
           <Tabs centered className='bgtab' onChange={handleChange}>
-            <Tab label="Todas as postagens" value="1"/>
+            <Tab label="Todos os assuntos" value="1"/>
             <Tab label="Igualdade de Gênero" value="2" />
           </Tabs>
         </AppBar>

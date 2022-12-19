@@ -2,7 +2,7 @@
     cursor: pointer;
 }
 
-.btnModal{
-    border-color: white !important;
-    background-color: white !important;
+.novapost{
+    border-color: rgb(82, 220, 255) !important;
+    background-color: rgb(159, 221, 247) !important;
 }

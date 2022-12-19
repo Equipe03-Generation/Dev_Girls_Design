@@ -14,7 +14,7 @@
 .text-decorator-none{
     text-decoration: none;
 }
-.rx{
+.botao{
     background-color: rgb(226, 57, 226) !important;
 }
 .papel{
@@ -28,10 +28,10 @@
 .rosa{
     color: rgb(219, 51, 213) !important;
 }
-.bc{
+.cor{
     color: white !important;
 }
-.regular{
+.font{
     font-family: 'Courier New', Courier, monospace !important;
 }
 .imagem3{
@@ -43,3 +43,8 @@
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
 }
+.fonte{
+    color: rgb(227, 220, 230) !important;
+    font-weight: 900 !important;
+    font-family: 'Stencil Std, fantasy' !important;
+ }

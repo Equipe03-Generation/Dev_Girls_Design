@@ -34,19 +34,20 @@ function Navbar() {
 
     var navbarComponent;
 
+
     if(token != ""){
         navbarComponent = <AppBar position="static">
         <Toolbar variant="dense" className='bgnav'>
-            <Box className='cursor'>
+            <Box className='cursor' >
                 <Typography variant="h5" color="inherit">
-                    Dev Girls
+                    Lady Debug
                 </Typography>
             </Box>
 
             <Box display="flex" justifyContent="start">
                 <Link to="/home" className="text-decorator-none">
                     <Box mx={1} className='cursor text-decorator-none'>
-                        <Typography variant="h6" color="inherit">
+                        <Typography variant="h6" color="inherit" className=''>
                             Home
                         </Typography>
                     </Box>
@@ -68,21 +69,21 @@ function Navbar() {
                 <Link to="/posts" className="text-decorator-none">
                     <Box mx={1} className='cursor text-decorator-none'>
                         <Typography variant="h6" color="inherit">
-                            Posts
+                            Assuntos
                         </Typography>
                     </Box>
                 </Link>               
                 <Link to="/temas" className="text-decorator-none">
                 <Box mx={1} className='cursor text-decorator-none'>
                     <Typography variant="h6" color="inherit">
-                        Temas
+                        Tópicos
                     </Typography>
                 </Box>
                 </Link>
                 <Link to="/formularioTema" className="text-decorator-none">
                 <Box mx={1} className='cursor text-decorator-none'>
                     <Typography variant="h6" color="inherit">
-                        Criar Tema
+                        Criar Tópicos
                     </Typography>
                 </Box>
                 </Link>

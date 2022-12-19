@@ -70,18 +70,18 @@ function Login() {
             <Grid alignItems='center' xs={6}>
                 <Box paddingX={20}>
                     <form onSubmit={onSubmit}>
-                        <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos1 bc regular'>Conecte-se</Typography>
+                        <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos1 cor font'>Conecte-se</Typography>
                         <TextField className='branco' value={userLogin.usuario} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='Usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
                         <TextField className='branco' value={userLogin.senha} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password'fullWidth />
                         <Box marginTop={2} textAlign='center'>
-                                <Button type='submit' variant='contained' color='primary' className='rx imagem3'>
+                                <Button type='submit' variant='contained' color='primary' className='botao imagem3'>
                                     Logar
                                 </Button>
                         </Box>
                     </form>
                     <Box display='flex' justifyContent='center' marginTop={2} >
                         <Box marginRight={1}>
-                            <Typography variant='subtitle1' gutterBottom align='center' className='bc'>Não tem uma conta?</Typography>
+                            <Typography variant='subtitle1' gutterBottom align='center' className='cor'>Não tem uma conta?</Typography>
                         </Box>
                         <Link className='rosa' to='/cadastrousuario'>
                             <Typography variant='subtitle1' gutterBottom align='center'>Cadastre-se</Typography>

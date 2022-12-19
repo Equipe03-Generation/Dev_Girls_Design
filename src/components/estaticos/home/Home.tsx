@@ -35,23 +35,22 @@ function Home() {
   }, [token])
     return (
         <>
-            <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
+            <Grid container direction="row"  alignItems="center" className='img3'>
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={20} >
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Seja bem-vinda!</Typography>
-                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>Esperamos que aprenda e repasse bastante conhecimento!</Typography>
+                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='fonte'>Seja bem-vinda!</Typography>
+                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='fonte'>Esperamos que aprenda e repasse bastante conhecimento!</Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
                             <ModalPostagem />
                         </Box>
                         <Link to="/posts" className="text-decorator-none">
-                            <Button variant="outlined" className='botao'>Ver Postagens</Button>
+                            <Button variant="outlined" className='botao'>Ver assuntos</Button>
                         </Link>
-                    </Box>
+                        </Box>
                 </Grid>
-                <Grid item xs={6} >
-                    <img src="https://cdn-icons-png.flaticon.com/512/1196/1196630.png" alt="" width="500px" height="500px" />
+                <Grid item xs={6} className=''>
                 </Grid>
                 <Grid xs={12} className='postagens'>
                     <TabPostagem />
