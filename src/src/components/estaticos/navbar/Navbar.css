@@ -1,0 +1,22 @@
+.cursor {
+    cursor: pointer;
+    color: white
+}
+
+.text-decorator-none {
+    text-decoration: none !important;
+}
+
+.bgnav {
+    background:linear-gradient(rgba(3, 67, 67, 0.058),transparent) !important;
+    background-color: rgba(0, 12, 11, 0.96) !important;
+}
+
+.textobranco {
+    color: white;
+}
+
+.logonav{
+background-image: url(img/1-removebg-preview.png) !important;
+}
+
