@@ -36,19 +36,20 @@ function Home() {
     return (
         <>
             <Grid container direction="row"  alignItems="center" className='img3'>
-                <Grid alignItems="center" item xs={6}>
+                <Grid alignItems="center" item xs={12}>
+                <Box display="flex" justifyContent="center" marginBottom={10}>
+                        <Box marginRight={1}>
+                            <ModalPostagem />
+                        </Box>
+                        </Box>
                     <Box paddingX={20} >
                         <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='fonte'>Seja bem-vinda!</Typography>
                         <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='fonte'>Esperamos que aprenda e repasse bastante conhecimento!</Typography>
                     </Box>
-                    <Box display="flex" justifyContent="center">
-                        <Box marginRight={1}>
-                            <ModalPostagem />
-                        </Box>
-                        <Link to="/posts" className="text-decorator-none">
-                            <Button variant="outlined" className='botao'>Ver assuntos</Button>
-                        </Link>
-                        </Box>
+                    <Grid xs={12}>
+                        <Box  className='img4 imagemcentrada'/>
+                    </Grid>
+                   
                 </Grid>
                 <Grid item xs={6} className=''>
                 </Grid>

@@ -38,9 +38,6 @@ function Navbar() {
     if(token != ""){
         navbarComponent = <AppBar position="static">
         <Toolbar variant="dense" className='bgnav centro'>
-            <Box className='cursor' >
-                <img src="https://i.gifer.com/origin/98/981e84be64a200cbfdada5de05171031_w200.gif" height={40} alt=""/>
-            </Box>
 
             <Box display="flex" justifyContent="start">
                 <Link to="/home" className="text-decorator-none">
@@ -62,7 +59,12 @@ function Navbar() {
                     <Box mx={1} className='cursor text-decorator-none'>
                         <img src="https://cdn-icons-png.flaticon.com/512/6738/6738314.png" height={40} alt="" />
                     </Box>
-                </Link>               
+                </Link>
+                <Link to="xxx" className="text-decorator-none">
+                    <Box mx={1} className='cursor text-decorator-none'>
+                        <img src="https://cdn-icons-png.flaticon.com/512/983/983952.png" height={40} alt="" />
+                    </Box>
+                </Link>                 
                 <Link to="/temas" className="text-decorator-none">
                 <Box mx={1} className='cursor text-decorator-none'>
                     <img src="https://cdn-icons-png.flaticon.com/512/1443/1443029.png" height={40} alt="" />
@@ -70,20 +72,12 @@ function Navbar() {
                 </Link>
                 <Link to="/formularioTema" className="text-decorator-none">
                 <Box mx={1} className='cursor text-decorator-none'>
-                    <img src="https://cdn-icons-png.flaticon.com/512/7588/7588927.png" height={40} alt="" />
+                    <img src="https://cdn-icons-png.flaticon.com/512/1658/1658958.png" height={40} alt="" />
                 </Box>
                 </Link>
               
                     <Box mx={1} className='cursor' onClick={goLogout}>
                         <img src="https://cdn-icons-png.flaticon.com/512/6488/6488629.png" height={40} alt="" />
-                    </Box>
-
-                    <Box mx={1} className='cursor'>
-                        <img src="https://ian.macky.net/pat/map/globes/earth-cloudy-256-slow.gif" height={30} alt="" />
-                    </Box>
-
-                    <Box mx={1} className='cursor'>
-                        <img src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcT1g1V8Nalm9FkR2atv7annUXbPvk5g-mWffaNxT_ItIFogl-6mC_lHNifw5Tw9-yiS" height={20} alt="" />
                     </Box>
                 
             </Box>
