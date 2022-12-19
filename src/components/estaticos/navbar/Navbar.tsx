@@ -37,7 +37,7 @@ function Navbar() {
 
     if(token != ""){
         navbarComponent = <AppBar position="static">
-        <Toolbar variant="dense" className='bgnav'>
+        <Toolbar variant="dense" className='bgnav centro'>
             <Box className='cursor' >
                 <Typography variant="h5" color="inherit">
                     Lady Debug
@@ -47,51 +47,37 @@ function Navbar() {
             <Box display="flex" justifyContent="start">
                 <Link to="/home" className="text-decorator-none">
                     <Box mx={1} className='cursor text-decorator-none'>
-                        <Typography variant="h6" color="inherit" className=''>
-                            Home
-                        </Typography>
+                        <img src="https://cdn-icons-png.flaticon.com/512/7606/7606136.png" height={40} alt="" />
                     </Box>
                 </Link>
                 <Link to="/equipe" className="text-decorator-none">
                     <Box mx={1} className='cursor text-decorator-none'>
-                        <Typography variant="h6" color="inherit">
-                            Equipe
-                        </Typography>
+                        <img src="https://cdn-icons-png.flaticon.com/512/1189/1189162.png" height={40} alt="" />
                     </Box>
                 </Link>
                 <Link to="/sobre" className="text-decorator-none">
                     <Box mx={1} className='cursor text-decorator-none'>
-                        <Typography variant="h6" color="inherit">
-                            Sobre
-                        </Typography>
+                        <img src="https://cdn-icons-png.flaticon.com/512/4210/4210456.png" height={40} alt="" />
                     </Box>
                 </Link>
                 <Link to="/posts" className="text-decorator-none">
                     <Box mx={1} className='cursor text-decorator-none'>
-                        <Typography variant="h6" color="inherit">
-                            Assuntos
-                        </Typography>
+                        <img src="https://cdn-icons-png.flaticon.com/512/2704/2704794.png" height={40} alt="" />
                     </Box>
                 </Link>               
                 <Link to="/temas" className="text-decorator-none">
                 <Box mx={1} className='cursor text-decorator-none'>
-                    <Typography variant="h6" color="inherit">
-                        Tópicos
-                    </Typography>
+                    <img src="https://cdn-icons-png.flaticon.com/512/2326/2326138.png" height={40} alt="" />
                 </Box>
                 </Link>
                 <Link to="/formularioTema" className="text-decorator-none">
                 <Box mx={1} className='cursor text-decorator-none'>
-                    <Typography variant="h6" color="inherit">
-                        Criar Tópicos
-                    </Typography>
+                    <img src="https://cdn-icons-png.flaticon.com/512/4316/4316188.png" height={40} alt="" />
                 </Box>
                 </Link>
               
                     <Box mx={1} className='cursor' onClick={goLogout}>
-                        <Typography variant="h6" color="inherit">
-                            Sair
-                        </Typography>
+                        <img src="https://cdn-icons-png.flaticon.com/512/4400/4400629.png" height={40} alt="" />
                     </Box>
                 
             </Box>
