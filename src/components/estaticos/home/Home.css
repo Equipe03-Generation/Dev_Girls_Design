@@ -9,9 +9,7 @@
 }
 
 .botao{
-    border-color: white !important;
-    background-color: rgb(38, 63, 72) !important;
-    color: white !important;
+    background-color: rgb(226, 57, 226) !important;
 }
 
 .postagens{
@@ -37,7 +35,7 @@
 }
 .img3{
 
-    background-image: url(https://acegif.com/wp-content/uploads/gif/outerspace-6.gif);
+    background-image: url(https://acegif.com/wp-content/uploads/gif/outerspace-60.gif);
     background-repeat: no-repeat;
     width: 100vh;
     min-height: 150vh;
@@ -45,5 +43,6 @@
     background-position: center;
    
 }
+
 
 

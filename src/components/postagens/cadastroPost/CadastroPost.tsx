@@ -2,12 +2,12 @@ import React, { ChangeEvent, useEffect, useState } from 'react'
 import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem, FormControl, FormHelperText } from "@material-ui/core";
 import './CadastroPost.css';
 import { useNavigate, useParams } from 'react-router-dom';
+import Tema from '../../../models/Tema';
+import Postagem from '../../../models/Postagem';
 import { busca, buscaId, post, put } from '../../../services/Service';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
-import Tema from '../../../models/Tema';
-import Postagem from '../../../models/Postagem';
 
 function CadastroPost() {
     let navigate = useNavigate();
@@ -96,7 +96,7 @@ function CadastroPost() {
                     'Authorization': token
                 }
             })
-            toast.success('Postagem atualizada com sucesso', {
+            toast.success('Postagem modificada com sucesso!', {
                 position: "top-right",
                 autoClose: 2000,
                 hideProgressBar: false,
@@ -112,7 +112,7 @@ function CadastroPost() {
                     'Authorization': token
                 }
             })
-            toast.success('Postagem cadastrada com sucesso', {
+            toast.success('Postagem criada com sucesso!', {
                 position: "top-right",
                 autoClose: 2000,
                 hideProgressBar: false,
@@ -132,9 +132,9 @@ function CadastroPost() {
     }
 
     return (
-        <Container maxWidth="sm" className="topo">
+        <Container maxWidth="sm">
             <form onSubmit={onSubmit}>
-                <Typography variant="h3" color="textSecondary" component="h1" align="center" >Cadastro assunto</Typography>
+                <Typography variant="h3" color="textSecondary" component="h1" align="center" >Cadastro de Postagem</Typography>
                 <TextField value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="titulo" label="Título" variant="outlined" name="titulo" margin="normal" fullWidth />
                 <TextField value={postagem.texto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="texto" label="Texto" name="texto" variant="outlined" margin="normal" fullWidth />
 
@@ -155,7 +155,7 @@ function CadastroPost() {
                         }
                     </Select>
                     <FormHelperText>Escolha um tema para a postagem</FormHelperText>
-                    <Button type="submit" variant="contained" color="primary" className='lady'>
+                    <Button type="submit" variant="contained" color="primary">
                         Finalizar
                     </Button>
                 </FormControl>

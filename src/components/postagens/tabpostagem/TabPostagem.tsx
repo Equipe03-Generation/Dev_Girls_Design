@@ -15,11 +15,11 @@ function TabPostagem() {
     <>
       <TabContext value={value}>
         <AppBar position="static">
-          <Tabs centered className='papel' onChange={handleChange}>
+          <Tabs centered className='bgtab' onChange={handleChange}>
             <Tab label="Atualizações" value="1"/>
           </Tabs>
         </AppBar>
-        <TabPanel value="1" className='papel' >
+        <TabPanel value="1" >
           <Box display="flex" flexWrap="wrap" justifyContent="center">
             <ListaPostagem />
           </Box>

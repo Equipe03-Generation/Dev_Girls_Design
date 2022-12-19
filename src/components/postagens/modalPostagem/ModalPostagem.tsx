@@ -61,8 +61,8 @@ function ModalPostagem () {
     <div>
       <Button
         variant="outlined"
-        className="novapost"
-        onClick={handleOpen}>Inicie um novo assunto</Button>
+        className="botao"
+        onClick={handleOpen}>Nova Postagem</Button>
       <Modal
         open={open}
         onClose={handleClose}

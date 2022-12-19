@@ -55,7 +55,7 @@ function ListaPostagem() {
             <Card variant="outlined">
               <CardContent>
                 <Typography color="textSecondary" gutterBottom>
-                  Assuntos
+                  Postagem
                 </Typography>
                 <Typography variant="h5" component="h2">
                   {post.titulo}
@@ -72,7 +72,7 @@ function ListaPostagem() {
 
                   <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
                     <Box mx={1}>
-                      <Button variant="contained" className="marginLeft btlistapost" size='small' >
+                      <Button variant="contained" className="marginLeft botao" size='small'>
                         Atualizar
                       </Button>
                     </Box>

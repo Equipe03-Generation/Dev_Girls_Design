@@ -77,7 +77,7 @@ function DeletarPostagem() {
           <CardContent>
             <Box justifyContent="center">
               <Typography color="textSecondary" gutterBottom>
-                Deseja deletar o Assunto:
+                Deseja deletar a Postagem:
               </Typography>
               <Typography color="textSecondary" >
               {post?.titulo}
@@ -88,7 +88,7 @@ function DeletarPostagem() {
           <CardActions>
             <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
               <Box mx={2}>
-              <Button onClick={sim} variant="contained" className="marginLeft" size='large' color="primary">
+              <Button onClick={sim} variant="contained" className="marginLeft botao" size='large'>
                 Sim
               </Button>
               </Box>
