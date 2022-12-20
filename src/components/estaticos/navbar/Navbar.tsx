@@ -42,7 +42,7 @@ function Navbar() {
             <Box display="flex" justifyContent="start">
                 <Link to="/home" className="text-decorator-none">
                     <Box mx={1} className='cursor text-decorator-none'>
-                        <img src="https://cdn-icons-png.flaticon.com/512/9094/9094099.png" height={40} alt="" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/5544/5544224.png" height={40} alt="" />
                     </Box>
                 </Link>
                 <Link to="/equipe" className="text-decorator-none">
@@ -57,7 +57,7 @@ function Navbar() {
                 </Link>
                 <Link to="/posts" className="text-decorator-none">
                     <Box mx={1} className='cursor text-decorator-none'>
-                        <img src="https://cdn-icons-png.flaticon.com/512/6738/6738314.png" height={40} alt="" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/7782/7782698.png" height={40} alt="" />
                     </Box>
                 </Link>
                 <Link to="xxx" className="text-decorator-none">
