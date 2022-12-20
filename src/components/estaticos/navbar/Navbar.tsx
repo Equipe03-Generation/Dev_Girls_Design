@@ -9,6 +9,7 @@ import { TokenState } from '../../../store/tokens/tokensReducer';
 import { useDispatch } from "react-redux";
 import { addToken } from '../../../store/tokens/actions';
 import {toast} from 'react-toastify';
+import ModalPostagem from '../../postagens/modalPostagem/ModalPostagem';
 
 function Navbar() {
     const token = useSelector<TokenState, TokenState["tokens"]>(
@@ -47,7 +48,7 @@ function Navbar() {
                         Home
                     </Box>
                 </Link>
-                <Link to="/equipe" className="text-decorator-none">
+                <Link to="/equipe" className="text-decorator-none sizeicons">
                     <Box mx={1} className='cursor text-decorator-none'>
                         <img src="https://cdn-icons-png.flaticon.com/512/5027/5027793.png" height={40} alt="" />
                         <br />
@@ -68,13 +69,10 @@ function Navbar() {
                         Posts
                     </Box>
                 </Link>
-                <Link to="xxx" className="text-decorator-none">
-                    <Box mx={1} className='cursor text-decorator-none'>
-                        <img src="https://cdn-icons-png.flaticon.com/512/983/983952.png" height={40} alt="" />
-                        <br />
+                    <Box mx={1} className='cursor text-decorator-none center'>
+                        <ModalPostagem/>
                         +Post
-                    </Box>
-                </Link>                 
+                    </Box>               
                 <Link to="/temas" className="text-decorator-none">
                 <Box mx={1} className='cursor text-decorator-none'>
                         <img src="https://cdn-icons-png.flaticon.com/512/1443/1443029.png" height={40} alt="" />
