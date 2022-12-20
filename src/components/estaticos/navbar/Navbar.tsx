@@ -43,41 +43,57 @@ function Navbar() {
                 <Link to="/home" className="text-decorator-none">
                     <Box mx={1} className='cursor text-decorator-none'>
                         <img src="https://cdn-icons-png.flaticon.com/512/5544/5544224.png" height={40} alt="" />
+                        <br />
+                        Home
                     </Box>
                 </Link>
                 <Link to="/equipe" className="text-decorator-none">
                     <Box mx={1} className='cursor text-decorator-none'>
                         <img src="https://cdn-icons-png.flaticon.com/512/5027/5027793.png" height={40} alt="" />
+                        <br />
+                        Equipe
                     </Box>
                 </Link>
                 <Link to="/sobre" className="text-decorator-none">
                     <Box mx={1} className='cursor text-decorator-none'>
                         <img src="https://cdn-icons-png.flaticon.com/512/6488/6488588.png" height={40} alt="" />
+                        <br />
+                        Sobre
                     </Box>
                 </Link>
                 <Link to="/posts" className="text-decorator-none">
                     <Box mx={1} className='cursor text-decorator-none'>
                         <img src="https://cdn-icons-png.flaticon.com/512/7782/7782698.png" height={40} alt="" />
+                        <br />
+                        Posts
                     </Box>
                 </Link>
                 <Link to="xxx" className="text-decorator-none">
                     <Box mx={1} className='cursor text-decorator-none'>
                         <img src="https://cdn-icons-png.flaticon.com/512/983/983952.png" height={40} alt="" />
+                        <br />
+                        +Post
                     </Box>
                 </Link>                 
                 <Link to="/temas" className="text-decorator-none">
                 <Box mx={1} className='cursor text-decorator-none'>
-                    <img src="https://cdn-icons-png.flaticon.com/512/1443/1443029.png" height={40} alt="" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/1443/1443029.png" height={40} alt="" />
+                        <br />
+                        Temas
                 </Box>
                 </Link>
                 <Link to="/formularioTema" className="text-decorator-none">
                 <Box mx={1} className='cursor text-decorator-none'>
-                    <img src="https://cdn-icons-png.flaticon.com/512/1658/1658958.png" height={40} alt="" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/1658/1658958.png" height={40} alt="" />
+                        <br />
+                        +Tema
                 </Box>
                 </Link>
               
                     <Box mx={1} className='cursor' onClick={goLogout}>
                         <img src="https://cdn-icons-png.flaticon.com/512/6488/6488629.png" height={40} alt="" />
+                        <br />
+                        Sair
                     </Box>
                 
             </Box>
