@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom';
 import './CadastroUsuario.css';
 import { toast } from 'react-toastify';
 import { createTheme } from '@mui/material/styles';
-import { TabTitle } from '../../tituloPaginas/GeneralFunctions';
 
 function CadastroUsuario() {
 
@@ -79,7 +78,6 @@ function CadastroUsuario() {
                 });
         }
     }
-    TabTitle('Lady Debug - Cadastro');
     return (
         <Grid container direction='row' justifyContent='center' alignItems='center' className='papel'>
             <Grid item xs={6} className='imagem2'></Grid>

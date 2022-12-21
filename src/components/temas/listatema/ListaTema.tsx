@@ -9,7 +9,6 @@ import { busca } from '../../../services/Service';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
-import { TabTitle } from '../../../tituloPaginas/GeneralFunctions';
 
 function ListaTema() {
   const [temas, setTemas] = useState<Tema[]>([])
@@ -46,14 +45,14 @@ function ListaTema() {
 
   useEffect(()=>{
     getTema()
-  }, [temas.length]);
-  TabTitle('Lady Debug - Temas');
+  }, [temas.length])
+
   return (
     <>
     {
       temas.map(tema =>(
       <Box m={2}>
-        <Card variant="outlined">
+        <Card variant="outlined" className='fundocaixatema'>
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
               Tema
