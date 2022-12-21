@@ -109,7 +109,7 @@ function CadastroTema() {
         }
         TabTitle('Lady Debug - Criar tema');
     return (
-        <Container maxWidth="sm" className='fundotema'>
+        <Container maxWidth="sm" className=''>
             <form onSubmit={onSubmit}>
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" >Cadastro de Tema</Typography>
                 <TextField value={tema.assunto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="assunto" label="Tema" variant="outlined" name="assunto" margin="normal" fullWidth />

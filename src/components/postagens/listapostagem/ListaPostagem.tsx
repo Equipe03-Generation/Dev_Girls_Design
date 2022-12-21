@@ -46,15 +46,15 @@ function ListaPostagem() {
 
     getPost()
 
-  }, [posts.length]);
+   }, [posts.length]);
   TabTitle('Lady Debug - Postagens');
 
   return (
     <>
       {
         posts.map(post => (
-          <Box className='fundos' m={1}>
-            <Card variant="outlined" className='papel'>
+          <Box m={1}>
+            <Card variant="outlined" className='papelpost'>
               <CardContent>
                 <Typography color="textSecondary" gutterBottom className='cordefundo'>
                   Postagem
