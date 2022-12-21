@@ -7,11 +7,10 @@ import { useSelector } from 'react-redux';
 import {  useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { TokenState } from '../../store/tokens/tokensReducer';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import clsx from 'clsx';
 import './ListaUsuario.css';
 import User from '../../models/User';
 import { busca } from '../../services/Service';
+import { TabTitle } from '../../tituloPaginas/GeneralFunctions';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -72,6 +71,7 @@ function ListaUsuario() {
   useEffect(() => {
     getPost();
   }, [user.length]);
+  TabTitle('Lady Debug - Usuários');
 
   return (
     <>
@@ -80,50 +80,28 @@ function ListaUsuario() {
           <span className="loader"></span>
         </div>
       )}
-      <div className="bgblackusuarios">
-        <h1 className='fontusuarios center paddusuarios'>Usuários Cadastrados</h1>
-        <Grid container className="imgusuarios">
+      <div className="bgblackusuarios paddusuarios">
+        <h1 className='fontusuarios center'>Usuários Cadastrados</h1>
+        <Grid container className="imgusuarios center">
           {user.map((user, i) => (
             <Box m={2} className="postagens">
-              <Card className="papelusuarios" variant="outlined">
+              <Card className="papelusuarios center" variant="outlined">
                 <CardContent>
                   <Typography
                     variant="h5"
                     component="h2"
-                    className="card-title"
+                    className="fontusuarios"
                   >
                     {user.nome}
+                    <br />
+                    {user.usuario}
                     <br />
                   </Typography>
                   <br />
                   <Typography variant="body2" component="p">
-                    <img src={user.foto} width="200px" height="190px" alt='' />
+                    <img src={user.foto} width="350px" height="250px" alt='' />
                   </Typography>
                 </CardContent>
-                <CardActions disableSpacing>
-                  <IconButton
-                    className={clsx(classes.expand, {
-                      [classes.expandOpen]: expanded,
-                    })}
-                    onClick={() => handleExpandClick(i)}
-                    aria-expanded={expanded === i}
-                    aria-label="show more"
-                  >
-                    <ExpandMoreIcon />
-                  </IconButton>
-                </CardActions>
-                <Collapse in={expanded === i} timeout="auto" unmountOnExit>
-                  <CardContent>
-                    <Typography variant="body1" component="p">
-                      <h2 className="informacao">Informações do usuário:</h2>
-                      <br />
-                      Contato: {user.usuario}
-                      <br/>
-                      <br/>
-                    </Typography>
-                  </CardContent>
-                </Collapse>
-                <CardActions></CardActions>
               </Card>
             </Box>
           ))}
