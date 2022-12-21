@@ -1,8 +1,10 @@
 import { Grid } from '@mui/material';
 import React from 'react';
+import { TabTitle } from '../../tituloPaginas/GeneralFunctions';
 import './Equipe.css';
 
 function Equipe() {
+    TabTitle('Lady Debug - Equipe');
     return (
         <Grid className='papel' padding={1}>
             <div className='center'>
