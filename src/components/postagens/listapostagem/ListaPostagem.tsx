@@ -8,6 +8,7 @@ import './ListaPostagem.css';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
+import { TabTitle } from '../../../tituloPaginas/GeneralFunctions';
 
 function ListaPostagem() {
   const [posts, setPosts] = useState<Postagem[]>([])
@@ -45,7 +46,8 @@ function ListaPostagem() {
 
     getPost()
 
-  }, [posts.length])
+  }, [posts.length]);
+  TabTitle('Lady Debug - Postagens');
 
   return (
     <>

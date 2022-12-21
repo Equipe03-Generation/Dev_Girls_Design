@@ -8,6 +8,7 @@ import './Login.css';
 import { useDispatch } from 'react-redux';
 import { addToken } from "../../store/tokens/actions";
 import { toast } from 'react-toastify';
+import { TabTitle } from '../../tituloPaginas/GeneralFunctions';
 
 function Login() {
     let navigate = useNavigate();
@@ -64,7 +65,7 @@ function Login() {
                     });
             }
         }
-
+    TabTitle('Lady Debug - Login');
     return (
         <Grid container direction='row' justifyContent='center' alignItems='center' className='papel'>
             <Grid alignItems='center' xs={6}>

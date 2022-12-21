@@ -2,8 +2,10 @@ import { Grid } from '@material-ui/core';
 import React from 'react';
 import './Sobre.css';
 import { Box } from '@mui/material';
+import { TabTitle } from '../../tituloPaginas/GeneralFunctions';
 
 function Sobre() {
+    TabTitle('Lady Debug - Sobre');
     return (
         <Grid container direction="row"  alignItems="center">
         <Grid alignItems="center" item xs={12}  className='imagemsobre'>

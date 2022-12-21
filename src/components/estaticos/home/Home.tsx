@@ -4,11 +4,10 @@ import {Box} from '@mui/material';
 import './Home.css';
 import { useNavigate } from 'react-router';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import ModalPostagem from '../../postagens/modalPostagem/ModalPostagem';
 import TabPostagem from '../../postagens/tabpostagem/TabPostagem';
 import { TokenState } from '../../../store/tokens/tokensReducer';
+import { TabTitle } from '../../../tituloPaginas/GeneralFunctions';
 
 function Home() {
 
@@ -32,7 +31,8 @@ function Home() {
         navigate("/login")
   
       }
-  }, [token])
+    }, [token]);
+    TabTitle('Lady Debug - Home');
     return (
         <>
             <Grid container direction="row"  alignItems="center" className='img3'>
