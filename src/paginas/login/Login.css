@@ -3,15 +3,16 @@
 }
 
 .imagemfundologin{
-    background-image: url(img/women-web-developer-with-laptop.png);
-    background-repeat: no-repeat;
-    width: 100vh;
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
+    background-image: url(img/img\ login2.png) !important;
+    background-repeat: no-repeat !important;
+    width: 200px !important;
+    min-height: 500px !important;
+    background-size: cover !important;
+    background-position: center !important;
+    
 }
 .imagemfundologin1{
-    background-image: url(img/galaxy.gif);
+    background-image: url(img/imag\ login.jpg);
     background-repeat: no-repeat;
     width: 100vh;
     min-height: 100vh;
@@ -32,7 +33,7 @@
 .link{
     color: rgb(212, 94, 239) !important;
 }
-.cor{
+.corlogin{
     color: rgb(246, 240, 240) !important;
 }
 .font{
@@ -56,3 +57,7 @@
     background-color: rgb(247, 239, 239) !important;
     font-variant-alternates: normal;
 }
+.fontlogin{
+    color: rgb(230, 218, 230) !important;
+}
+
