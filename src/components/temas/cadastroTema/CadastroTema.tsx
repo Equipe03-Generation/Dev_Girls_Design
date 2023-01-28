@@ -110,15 +110,15 @@ function CadastroTema() {
         }
         TabTitle('Lady Debug - Criar tema');
     return (
-        <Grid className='fundototalcadastrotema produto-container'>
-            <Grid alignItems="center" item xs={12} className=''>
+        <Grid className='fundotema'>
+            <Grid alignItems="center" item xs={12} className='fundotema'>
             <form onSubmit={onSubmit}  className='formcadastro'>
 
                 <Typography variant="h3" className='fontecadtema' component="h1" align="center">Cadastro de Tema</Typography>
                 <TextField className='cortemacaixa' value={tema.assunto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="assunto" label="Tema" name="assunto" margin="normal" fullWidth />
                 <TextField className='cortemacaixa' value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="Descrição" name="descricao" margin="normal" fullWidth />
                 
-                <Button type="submit" variant="contained" className='botaofinalizartema imagem3'>
+                <Button type="submit" variant="contained" className='botaocadtema'>
                     Finalizar
                 </Button>
             </form>

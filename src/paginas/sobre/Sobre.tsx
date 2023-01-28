@@ -7,16 +7,16 @@ import { TabTitle } from '../../tituloPaginas/GeneralFunctions';
 function Sobre() {
     TabTitle('Lady Debug - Sobre');
     return (
-        <Grid container direction="row"  alignItems="center" className='produto-container'>
-        <Grid alignItems="center" item xs={12}  className='fundototalsobre'>
-            <Box padding={2} textAlign='center'>
+        <Grid container direction="row"  alignItems="center">
+        <Grid alignItems="center" item xs={12}  className='imagemsobre'>
+            <Box padding={3} textAlign='center'>
             <h1 className='fontesobre'>Sobre o projeto Lady Debug</h1>
             </Box>
             <Grid container direction="row" justifyContent="center" alignItems="center">
             <Grid >
         </Grid>
         </Grid>
-            <Box padding={15} textAlign='center'>
+            <Box padding={5} textAlign='center'>
                 
             <h2 className='fonttextosobre tipofontsb'> Somos um fórum de interações que abrange a conversação entre mulheres que são da área de tecnologia e mulheres interessadas a ingressar,
  com foco em perguntas e respostas, troca de experiências e principalmente incentivo. No nosso fórum são compartilhadas inovações a todo momento, na voz de mulheres de todo Brasil.

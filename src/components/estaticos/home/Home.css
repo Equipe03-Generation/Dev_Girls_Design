@@ -8,7 +8,6 @@
    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
    color: rgb(18, 19, 19); text-shadow: rgb(191, 0, 255) 0.1em 0.1em 0.2em !important;
 
-
 }
 
 .botao{
@@ -54,18 +53,3 @@
     margin-left: auto;
     margin-right: auto 
 }
-.fundototalhome{
-    background-color: rgb(78, 6, 108);
-}
-.produto-container{
-    display: flex;
-    width:100%;
-    justify-content: space-around;
- }
- @media screen and (max-width: 768px) {
-    .produto-container{
-        width: 100%;
-        flex-direction: column;
-    }
-    
- }

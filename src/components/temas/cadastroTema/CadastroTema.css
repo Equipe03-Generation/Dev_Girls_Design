@@ -35,30 +35,4 @@
 .cortemacaixa{
     background-color: white !important;
 }
-.fundototalcadastrotema{
-    background-color: rgb(78, 6, 108);
-}
-.botaofinalizartema{
-    background-color: forestgreen !important;
-}
-.imagem3{
-    transition: all 0.5s;
-    cursor: pointer;
-}
-.imagem3:hover{
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-}
-.produto-container{
-    display: flex;
-    width:100%;
-    justify-content: space-around;
- }
- @media screen and (max-width: 768px) {
-    .produto-container{
-        width: 100%;
-        flex-direction: column;
-    }
-    
- }
 

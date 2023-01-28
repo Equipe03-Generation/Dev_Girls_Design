@@ -73,7 +73,7 @@ function DeletarTema() {
           
   return (
     <>
-      <Box m={2} className='produto-container'>
+      <Box m={2}>
         <Card variant="outlined">
           <CardContent>
             <Box justifyContent="center">

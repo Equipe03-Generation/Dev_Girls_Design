@@ -1,5 +1,5 @@
 .imagem2{
-    background-image: url();
+    background-image: url(img/galaxy.gif);
     background-repeat: no-repeat;
     width: 100vh;
     min-height: 100vh;
@@ -41,14 +41,11 @@
  
  }
 
-  .botaocadastrarusuario{
-    background-color: green !important;
-    color: black !important;
+  .cor1{
+    background-color: blueviolet !important;
   }
-  .botaocancelarusuario{
-    background-color: rgb(241, 54, 54) !important;
-    color: black !important;
-
+  .cor2{
+    background-color: gray !important;
   }
   .imagem3{
     transition: all 0.5s;
@@ -59,22 +56,6 @@
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
 }
-.fundototalcadastrousuario{
-    background-color: blueviolet;
-}
-.produto-container{
-    display: flex;
-    width:100%;
-    justify-content: space-around;
- }
- @media screen and (max-width: 768px) {
-    .produto-container{
-        width: 100%;
-        flex-direction: column;
-    }
-    
- }
-
 
   
   
