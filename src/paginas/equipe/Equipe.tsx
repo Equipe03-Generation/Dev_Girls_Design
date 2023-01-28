@@ -6,11 +6,11 @@ import { TabTitle } from '../../tituloPaginas/GeneralFunctions';
 function Equipe() {
     TabTitle('Lady Debug - Equipe');
     return (
-        <Grid container direction="row"  alignItems="center">
-            <Grid alignItems="center" item xs={12} className='imagemequipe1'>
+        <Grid className='fundototalequipe produto-container' container direction="row"  alignItems="center" >
+            <Grid className='fundototalequipe' alignItems="center" item xs={12}>
             <div className='center'>
                 <h1 className='fontequipe tipofonteq'> Equipe Desenvolvedora </h1></div>
-            <div className='newspaper newspaper1 newspaper2 newspaper3'>
+            <div className='newspaper newspaper1 newspaper2'>
 
                     <img src="https://media-exp1.licdn.com/dms/image/D4D03AQF_J4bco9BYow/profile-displayphoto-shrink_400_400/0/1668741996858?e=1675296000&v=beta&t=pF0z67kquK3VaC8jCrOoEOtQllBLHZ0OhmLmUbPRCsk" 
                     className='tamanhos imagemequipe' alt=''/>       

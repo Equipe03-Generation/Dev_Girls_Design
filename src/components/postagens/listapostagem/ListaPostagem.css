@@ -2,18 +2,15 @@
     text-decoration: none;
 }
 
-.botao{
-    background-color: rgb(147, 128, 147) !important;
+.botaoatualizarpost{
+    background-color: rgb(26, 147, 22) !important;
+    color: black !important;
 }
 
 .papelpost{
     background:linear-gradient(rgb(185, 74, 205),transparent) !important;
     background-color: rgb(116, 239, 239) !important;
 
-}
-.atum{
-color: aliceblue !important;
-background-color: rgb(226, 57, 226) !important;
 }
 .fundos{
     background-color: aquamarine;
@@ -28,3 +25,22 @@ background-color: rgb(226, 57, 226) !important;
 .displayflex{
     display: flex !important;
 }
+.fundototallistapost{
+    background-color: rgb(78, 6, 108) !important;
+}
+.botaodeletarpost{
+    background-color: brown !important;
+    color: black !important;
+}
+.produto-container{
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+ }
+ @media screen and (max-width: 768px) {
+    .produto-container{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+ }

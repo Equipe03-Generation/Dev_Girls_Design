@@ -51,7 +51,8 @@ function ListaPostagem() {
 
   return (
     <>
-    <Grid container className= 'displayflex'>
+    <Grid container  direction='row' alignItems='center' className= 'produto-container fundototallistapost'>
+      <Grid alignItems="center" item xs={12}>
       {
         posts.map(post => (
           <Box m={1} className='caixalistapost'>
@@ -75,14 +76,14 @@ function ListaPostagem() {
 
                   <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
                     <Box mx={1}>
-                      <Button variant="contained"size='small' className="atum">
+                      <Button variant="contained"size='small' className="botaoatualizarpost">
                         Atualizar
                       </Button>
                     </Box>
                   </Link>
                   <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
                     <Box mx={1}>
-                      <Button variant="contained" size='small' color="secondary">
+                      <Button variant="contained" size='small' color="secondary" className='botaodeletarpost'>
                         Deletar
                       </Button>
                     </Box>
@@ -94,6 +95,7 @@ function ListaPostagem() {
 
         ))
       } 
+      </Grid>
        </Grid>
     </>
   )

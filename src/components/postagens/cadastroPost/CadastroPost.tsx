@@ -107,7 +107,7 @@ function CadastroPost() {
 
 
     async function findByIdPostagem(id: string) {
-        await buscaId(`postagens/${id}`, setPostagem, {
+        await buscaId(`/postagens/${id}`, setPostagem, {
             headers: {
                 'Authorization': token
             }
@@ -170,13 +170,13 @@ function CadastroPost() {
 
     return (
         <>
-<Grid className='centralizarImg'>
+<Grid className='centralizarImg produto-container'>
             <img src='https://cdn.discordapp.com/attachments/1011758147494498377/1055504651795054712/sale-removebg-preview.png'></img>
 
             </Grid>
         
         
-        <Container maxWidth="sm" className="topo">
+        <Container maxWidth="sm" className="topo produto-container">
             <form onSubmit={onSubmit}>
                 {/* <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro postagem</Typography> */}
                 <TextField value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="titulo" label="TITULO" variant="outlined" name="titulo" margin="normal" fullWidth />
@@ -198,6 +198,7 @@ function CadastroPost() {
                             ))
                         }
                     </Select>
+                    <FormControl>
                     <InputLabel id="demo-simple-select-helper-label">Usuário </InputLabel>
                     <Select
                         labelId="demo-simple-select-helper-label"
@@ -213,8 +214,9 @@ function CadastroPost() {
                             ))
                         }
                     </Select>
+                    </FormControl>
                     <FormHelperText>Escolha um tema e usuário para finalizar</FormHelperText>
-                    <Button type="submit" variant="contained" color="primary">
+                    <Button type="submit" variant="contained" color="primary" className='botaofinalizarpost imagem3'>
                         Finalizar
                     </Button>
                 </FormControl>

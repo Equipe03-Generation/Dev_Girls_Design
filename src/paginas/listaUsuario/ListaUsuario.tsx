@@ -76,15 +76,15 @@ function ListaUsuario() {
   return (
     <>
       {user.length === 0 && (
-        <div className="loader-content">
+        <div className='loader-content fundototallistausuarios produto-container'>
           <span className="loader"></span>
         </div>
       )}
-      <div className='fundolista center'>
+      <div className='fundototallistausuarios'>
         <h1 className='fontusuarios center'>Usuários Cadastrados</h1>
-        <Grid container className='imgusuarios center'>
+        <Grid container alignItems="center" item xs={12} className=' fundototallistausuarios center produto-container'>
           {user.map((user, i) => (
-            <Box className="cardusuario" m={1}>
+            <Box className="cardusuario fundototallistausuarios" m={1}>
               <Card className="papelusuarios center" variant="outlined">
                 <CardContent>
                   <Typography
