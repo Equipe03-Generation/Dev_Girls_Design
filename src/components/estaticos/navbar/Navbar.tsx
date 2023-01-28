@@ -38,7 +38,7 @@ function Navbar() {
 
     if(token != ""){
         navbarComponent = <AppBar position="static">
-        <Toolbar variant="dense" className='bgnav centro'>
+        <Toolbar variant="dense" className='bgnav centro produto-container'>
 
             <Box display="flex" justifyContent="start">
                 <Link to="/home" className="text-decorator-none">
@@ -48,20 +48,8 @@ function Navbar() {
                         Home
                     </Box>
                 </Link>
-                <Link to="/equipe" className="text-decorator-none sizeicons">
-                    <Box mx={5} className='cursor text-decorator-none center'>
-                        <img src="https://cdn-icons-png.flaticon.com/512/1283/1283218.png" height={40} alt="" />
-                        <br />
-                        Equipe
-                    </Box>
-                </Link>
-                <Link to="/sobre" className="text-decorator-none">
-                    <Box mx={5} className='cursor text-decorator-none center'>
-                        <img src="https://cdn-icons-png.flaticon.com/512/6488/6488588.png" height={40} alt="" />
-                        <br />
-                        Sobre
-                    </Box>
-                </Link>
+                
+                
                 <Link to="/posts" className="text-decorator-none">
                     <Box mx={5} className='cursor text-decorator-none center'>
                         <img src="https://cdn-icons-png.flaticon.com/512/7782/7782698.png" height={40} alt="" />
@@ -92,6 +80,21 @@ function Navbar() {
                         <img src="https://cdn-icons-png.flaticon.com/512/5027/5027793.png" height={40} alt="" />
                         <br />
                         Usuários
+                    </Box>
+                </Link>
+                <Link to="/sobre" className="text-decorator-none">
+                    <Box mx={5} className='cursor text-decorator-none center'>
+                        <img src="https://cdn-icons-png.flaticon.com/512/6488/6488588.png" height={40} alt="" />
+                        <br />
+                        Sobre
+                    </Box>
+                </Link>
+
+                <Link to="/equipe" className="text-decorator-none sizeicons">
+                    <Box mx={5} className='cursor text-decorator-none center'>
+                        <img src="https://cdn-icons-png.flaticon.com/512/1283/1283218.png" height={40} alt="" />
+                        <br />
+                        Equipe
                     </Box>
                 </Link>
               

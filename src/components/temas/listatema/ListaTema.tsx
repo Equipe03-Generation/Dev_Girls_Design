@@ -51,7 +51,7 @@ function ListaTema() {
 
   return (
     <>
-    <Grid container className= 'displayflextema'>
+    <Grid container direction='row' alignItems='center' className= 'produto-container fundototaltema'>
     {
       temas.map(tema =>(
       <Box m={2}>
@@ -69,14 +69,14 @@ function ListaTema() {
 
               <Link to={`/formularioTema/${tema.id}`} className="text-decorator-none">
                 <Box mx={1}>
-                  <Button variant="contained" className="marginLeft botao" size='small'>
+                  <Button variant="contained" className="marginLeft botaoatualizartema" size='small'>
                     Atualizar
                   </Button>
                 </Box>
               </Link>
               <Link to={`/deletarTema/${tema.id}`} className="text-decorator-none">
                 <Box mx={1}>
-                  <Button variant="contained" size='small' color="secondary">
+                  <Button variant="contained" size='small' color="secondary" className='botaodeletartema'>
                     Deletar
                   </Button>
                 </Box>

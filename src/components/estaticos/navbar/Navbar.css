@@ -18,3 +18,18 @@
 .centro {
     justify-content: center;
 }
+.barranavibar{
+    background-color: rgb(78, 6, 108) !important;
+}
+.produto-container{
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+ }
+ @media screen and (max-width: 768px) {
+    .produto-container{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+ }
