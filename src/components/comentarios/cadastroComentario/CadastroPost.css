@@ -1,0 +1,37 @@
+.topo{
+    margin-top: 40px;
+}
+
+.botaopostagem{
+    background:linear-gradient(rgb(185, 74, 205),transparent) !important;
+    background-color: rgb(116, 239, 239) !important;
+}
+
+.postcad{
+    background-color: rgb(160, 159, 162) !important;
+}
+.botaofinalizarpost{
+    background-color: green !important;
+    color: black !important;
+}
+.imagem3{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.imagem3:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+.produto-container{
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+ }
+
+ @media screen and (max-width: 768px) {
+    .produto-container{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+ }
