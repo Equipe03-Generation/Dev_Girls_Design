@@ -1,3 +1,4 @@
+import Comentario from './Comentario';
 import Postagem from './Postagem'
 
 interface User {
@@ -7,6 +8,7 @@ interface User {
     senha: string;
     foto: string
     postagem?: Postagem| null
+    comentario?: Comentario|null
 }
 
 export default User;

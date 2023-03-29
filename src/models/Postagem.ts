@@ -1,3 +1,4 @@
+import Comentario from './Comentario';
 import Tema from './Tema'
 import User from './User';
 
@@ -7,6 +8,7 @@ interface Postagem{
     texto: string;
     tema?: Tema| null
     usuario?: User|null
+    comentario?: Comentario|null
 }
 
 export default Postagem;

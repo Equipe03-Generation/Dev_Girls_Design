@@ -5,7 +5,8 @@ import {Button} from "@material-ui/core";
 import {Box} from '@mui/material';
 import CloseIcon from '@material-ui/icons/Close';
 import './ModalPostagem.css';
-import CadastroPost from '../cadastroPost/CadastroPost';
+import CadastroComentario from '../cadastroComentario/CadastroComentario';
+
 
 
 function getModalStyle() {
@@ -52,7 +53,7 @@ function ModalPostagem () {
       
       </Box>
       
-      <CadastroPost/>
+      <CadastroComentario/>
       
     </div>
   );

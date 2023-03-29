@@ -3,19 +3,19 @@ import {Typography, Button, Card, CardActions, CardContent } from "@material-ui/
 import {Box} from '@mui/material';
 import './DeletarPostagem.css';
 import { useNavigate, useParams } from 'react-router-dom';
-import Postagem from '../../../models/Postagem';
 import { buscaId, deleteId } from '../../../services/Service';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
+import Comentario from '../../../models/Comentario';
 
-function DeletarPostagem() {
+function DeletarComentario() {
     let navigate = useNavigate();
     const { id } = useParams<{id: string}>();
     const token = useSelector<TokenState, TokenState["tokens"]>(
       (state) => state.tokens
     );
-    const [post, setPosts] = useState<Postagem>()
+    const [coment, setComents] = useState<Comentario>()
 
     useEffect(() => {
         if (token == "") {
@@ -41,7 +41,7 @@ function DeletarPostagem() {
     }, [id])
 
     async function findById(id: string) {
-        buscaId(`/postagens/${id}`, setPosts, {
+        buscaId(`/comentarios/${id}`, setComents, {
             headers: {
               'Authorization': token
             }
@@ -49,13 +49,13 @@ function DeletarPostagem() {
         }
 
         function sim() {
-          navigate('/posts')
-            deleteId(`/postagens/${id}`, {
+          navigate('/coments')
+            deleteId(`/comentarios/${id}`, {
               headers: {
                 'Authorization': token
               }
             });
-            toast.success('Postagem deletada com sucesso', {
+            toast.success('Comentário deletado com sucesso', {
               position: "top-right",
               autoClose: 2000,
               hideProgressBar: false,
@@ -68,7 +68,7 @@ function DeletarPostagem() {
           }
         
           function nao() {
-            navigate('/posts')
+            navigate('/coments')
           }
   return (
     <>
@@ -77,10 +77,10 @@ function DeletarPostagem() {
           <CardContent>
             <Box justifyContent="center">
               <Typography color="textSecondary" gutterBottom>
-                Deseja deletar a Postagem:
+                Deseja deletar o comentário?
               </Typography>
               <Typography color="textSecondary" >
-              {post?.titulo}
+              {coment?.texto}
               </Typography>
             </Box>
 
@@ -104,4 +104,4 @@ function DeletarPostagem() {
     </>
   );
 }
-export default DeletarPostagem;
+export default DeletarComentario;

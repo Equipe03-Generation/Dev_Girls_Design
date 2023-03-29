@@ -1,19 +1,18 @@
 import React, { ChangeEvent, useEffect, useState } from 'react'
-import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem, FormControl, FormHelperText, Grid } from "@material-ui/core";
+import { Container, TextField, Button, Select, InputLabel, MenuItem, FormControl, FormHelperText, Grid } from "@material-ui/core";
 import './CadastroPost.css';
 import { useNavigate, useParams } from 'react-router-dom';
-import Tema from '../../../models/Tema';
-import Postagem from '../../../models/Postagem';
 import { busca, buscaId, post, put } from '../../../services/Service';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
 import User from '../../../models/User';
+import Comentario from '../../../models/Comentario';
 
 function CadastroPost() {
     let navigate = useNavigate();
     const { id } = useParams<{ id: string }>();
-    const [temas, setTemas] = useState<Tema[]>([])
+    const [comentarios, setComentarios] = useState<Comentario[]>([])
     const [users, setUsers] = useState<User[]>([])
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
@@ -35,14 +34,6 @@ function CadastroPost() {
 
         }
     }, [token])
-
-    const [tema, setTema] = useState<Tema>(
-        {
-            id: 0,
-            assunto: '',
-            descricao: '',
-            postagem: null
-        })
     
     const [user, setUser] = useState<User>(
         {
@@ -53,47 +44,30 @@ function CadastroPost() {
             foto: ''
         })
     
-    const [postagem, setPostagem] = useState<Postagem>({
+    const [comentario, setComentario] = useState<Comentario>({
         id: 0,
-        titulo: '',
         texto: '',
-        tema: null,
-        usuario: null
+        usuario: null,
+        postagem: null
     })
 
     useEffect(() => { 
-        setPostagem({
-            ...postagem,
-            tema: tema
+        setComentario({
+            ...comentario
         })
-    }, [tema])
+    }, [comentario])
 
     useEffect(() => { 
-        setPostagem({
-            ...postagem,
+        setComentario({
+            ...comentario,
             usuario: user
         })
     }, [user])
 
     useEffect(() => {
-        getTemas()
-        if (id !== undefined) {
-            findByIdPostagem(id)
-        }
-    }, [id])
-
-    async function getTemas() {
-        await busca("/tema", setTemas, {
-            headers: {
-                'Authorization': token
-            }
-        })
-    }
-
-    useEffect(() => {
         getUsers()
         if (id !== undefined) {
-            findByIdPostagem(id)
+            findByIdComentario(id)
         }
     }, [id])
 
@@ -106,20 +80,19 @@ function CadastroPost() {
     }
 
 
-    async function findByIdPostagem(id: string) {
-        await buscaId(`/postagens/${id}`, setPostagem, {
+    async function findByIdComentario(id: string) {
+        await buscaId(`/comentarios/${id}`, setComentario, {
             headers: {
                 'Authorization': token
             }
         })
     }
 
-    function updatedPostagem(e: ChangeEvent<HTMLInputElement>) {
+    function updatedComentario(e: ChangeEvent<HTMLInputElement>) {
 
-        setPostagem({
-            ...postagem,
+        setComentario({
+            ...comentario,
             [e.target.name]: e.target.value,
-            tema: tema,
             usuario: user
         })
     }
@@ -128,7 +101,7 @@ function CadastroPost() {
         e.preventDefault()
 
         if (id !== undefined) {
-            put(`/postagens`, postagem, setPostagem, {
+            put(`/comentarios`, comentario, setComentario, {
                 headers: {
                     'Authorization': token
                 }
@@ -144,7 +117,7 @@ function CadastroPost() {
                 progress: undefined,
             });
         } else {
-            post(`/postagens`, postagem, setPostagem, {
+            post(`/comentarios`, comentario, setComentario, {
                 headers: {
                     'Authorization': token
                 }
@@ -179,26 +152,10 @@ function CadastroPost() {
         <Container maxWidth="sm" className="topo produto-container">
             <form onSubmit={onSubmit}>
                 {/* <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro postagem</Typography> */}
-                <TextField value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="titulo" label="TITULO" variant="outlined" name="titulo" margin="normal" fullWidth />
-                <TextField value={postagem.texto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="texto" label="TEXTO" name="texto" variant="outlined" margin="normal" fullWidth />
+                <TextField value={comentario.usuario?.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedComentario(e)} id="titulo" label="TITULO" variant="outlined" name="titulo" margin="normal" fullWidth />
+                <TextField value={comentario.texto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedComentario(e)} id="texto" label="TEXTO" name="texto" variant="outlined" margin="normal" fullWidth />
 
                 <FormControl >
-                    <InputLabel id="demo-simple-select-helper-label">Tema </InputLabel>
-                    <Select
-                        labelId="demo-simple-select-helper-label"
-                        id="demo-simple-select-helper"
-                        onChange={(e) => buscaId(`/tema/${e.target.value}`, setTema, {
-                            headers: {
-                                'Authorization': token
-                            }
-                        })}>
-                        {
-                            temas.map(tema => (
-                                <MenuItem value={tema.id}>{tema.assunto}</MenuItem>
-                            ))
-                        }
-                    </Select>
-                    <FormControl>
                     <InputLabel id="demo-simple-select-helper-label">Usuário </InputLabel>
                     <Select
                         labelId="demo-simple-select-helper-label"
@@ -214,8 +171,24 @@ function CadastroPost() {
                             ))
                         }
                     </Select>
+                    <FormControl>
+                    <InputLabel id="demo-simple-select-helper-label">Postagem </InputLabel>
+                    <Select
+                        labelId="demo-simple-select-helper-label"
+                        id="demo-simple-select-helper"
+                        onChange={(e) => buscaId(`/postagens/${e.target.value}`, setComentario, {
+                            headers: {
+                                'Authorization': token
+                            }
+                        })}>
+                        {
+                            comentarios.map(comentario => (
+                                <MenuItem value={comentario.id}>{comentario.texto}</MenuItem>
+                            ))
+                        }
+                    </Select>
                     </FormControl>
-                    <FormHelperText>Escolha um tema e usuário para finalizar</FormHelperText>
+                    <FormHelperText>Escolha um usuário e postagem para finalizar</FormHelperText>
                     <Button type="submit" variant="contained" color="primary" className='botaofinalizarpost imagem3'>
                         Finalizar
                     </Button>
