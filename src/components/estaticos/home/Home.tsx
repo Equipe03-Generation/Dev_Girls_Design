@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import {Typography, Grid, Button} from '@material-ui/core';
+import {Typography, Grid} from '@material-ui/core';
 import {Box} from '@mui/material';
 import './Home.css';
 import { useNavigate } from 'react-router';
@@ -35,26 +35,23 @@ function Home() {
     TabTitle('Lady Debug - Home');
     return (
         <>
-            <Grid container direction="row"  alignItems="center" className='fundototalhome produto-container'>
-    
+            <Grid container direction="row"  alignItems="center" className='imagemhome'>
                 <Grid alignItems="center" item xs={12}>
-                <Grid>
-                    <Box padding={2}>
-                        
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='fontes direitafonte'>Seja bem-vinda!</Typography>
-                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='fontes'>Esperamos que aprenda e repasse bastante conhecimento!</Typography>
+                    <Box paddingX={20} >
+                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='fontes'>Seja bem-vinda novamente!</Typography>
+                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='fontes'>Esperamos que aprenda e repasse bastante conhecimento.</Typography>
                     </Box>
                     <Grid xs={12}>
-                        <Box  className='img4 imagemcentrada '/>
-                        </Grid>
-                        </Grid>
+                        <Box  className='img4 imagemcentrada'/>
                     </Grid>
-                    
+                   
+                </Grid>
+                <Grid item xs={6} className=''>
                 </Grid>
                 <Grid xs={12} className='postagens'>
                     <TabPostagem />
                 </Grid>
-            
+            </Grid>
         </>
     );
 }

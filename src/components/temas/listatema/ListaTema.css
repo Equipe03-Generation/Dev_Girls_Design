@@ -2,9 +2,8 @@
     text-decoration: none;
 }
 
-.botaoatualizartema{
-    background-color: rgb(37, 192, 48) !important;
-    color: rgb(3, 4, 6) !important;
+.botaodeletartema{
+    background-color: rgb(7, 189, 189) !important;
 }
 .fundocaixatema{
     background:linear-gradient(rgba(52, 1, 69, 0.5),transparent) !important;
@@ -24,23 +23,10 @@
 .displayflextema{
     display: flex !important;
 }
-.fundototaltema{
-    background-color: rgb(78, 6, 108) !important;
+
+.botaoatualizartema{
+    background-color: rgb(71, 4, 102) !important;
+    color: white !important;
 }
-.botaodeletartema{
-    background-color: brown !important;
-    color: black !important;
-}
-.produto-container{
-    display: flex;
-    width:100%;
-    justify-content: space-around;
- }
- @media screen and (max-width: 768px) {
-    .produto-container{
-        width: 100%;
-        flex-direction: column;
-    }
-    
- }
+
 

@@ -1,18 +1,10 @@
-.imagem2{
-    background-image: url();
-    background-repeat: no-repeat;
-    width: 100vh;
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
-}
-
 .textos2{
     font-weight: bold;
 }
 
-.btnCancelar{
+.botaoCancelarusuario{
     margin-right: 10px !important;
+    background-color: rgb(7, 189, 189) !important;
 }
 .rx{
     background-color: rgb(226, 57, 226) !important;
@@ -34,21 +26,16 @@
     color: white !important;
 }
 .fontcadastro{
-    color: rgb(227, 220, 230) !important;
-    font-weight: 900 !important;
+    color: white !important;
     font-family: Verdana, Geneva, Tahoma, sans-serif !important;
-    color: rgb(18, 19, 19); text-shadow: rgb(191, 0, 255) 0.1em 0.1em 0.2em !important;
- 
+    text-shadow: 7px 7px 5px black!important;
  }
 
-  .botaocadastrarusuario{
-    background-color: green !important;
-    color: black !important;
+  .cor1{
+    background-color: blueviolet !important;
   }
-  .botaocancelarusuario{
-    background-color: rgb(241, 54, 54) !important;
-    color: black !important;
-
+  .cor2{
+    background-color: gray !important;
   }
   .imagem3{
     transition: all 0.5s;
@@ -59,25 +46,28 @@
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
 }
-.fundototalcadastrousuario{
-    background-color: blueviolet;
+
+.branco2{
+    background-color: white;
+  
 }
-.produto-container{
+
+.fundocadastro{
+    background:linear-gradient(rgb(71, 4, 102),transparent) !important;
+    background-color: rgb(7, 189, 189) !important;
+    width: 100vh;
+    min-height: 100vh;
+ }
+
+ .linha{
     display: flex;
-    width:100%;
-    justify-content: space-around;
- }
- @media screen and (max-width: 768px) {
-    .produto-container{
-        width: 100%;
-        flex-direction: column;
-    }
-    
  }
 
-
-  
-  
-
+.alinhado{
+    justify-content: center;
+}
+.botaocadastrousuario{
+    background-color: rgb(71, 4, 102) !important;
+}
 
 

@@ -1,15 +1,7 @@
-.botao{
-    background-color: rgb(226, 57, 226) !important;
+.botaodetetartema{
+    background-color: rgb(7, 189, 189) !important;
+    color: white !important;
 }
-.produto-container{
-    display: flex;
-    width:100%;
-    justify-content: space-around;
- }
- @media screen and (max-width: 768px) {
-    .produto-container{
-        width: 100%;
-        flex-direction: column;
-    }
-    
- }
+.botaonaotema{
+    background-color: rgb(71, 4, 102) !important;
+}

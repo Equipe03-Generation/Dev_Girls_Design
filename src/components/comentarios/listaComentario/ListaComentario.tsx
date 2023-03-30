@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { busca } from '../../../services/Service'
 import {  Card, CardActions, CardContent, Button, Typography, Grid } from '@material-ui/core';
 import {Box} from '@mui/material';
-import './ListaPostagem.css';
+import './ListaComentario.css';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';

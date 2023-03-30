@@ -1,6 +1,6 @@
 import React, { ChangeEvent, useEffect, useState } from 'react'
 import { Container, TextField, Button, Select, InputLabel, MenuItem, FormControl, FormHelperText, Grid } from "@material-ui/core";
-import './CadastroPost.css';
+import './CadastroComentario.css';
 import { useNavigate, useParams } from 'react-router-dom';
 import { busca, buscaId, post, put } from '../../../services/Service';
 import { useSelector } from 'react-redux';
@@ -106,7 +106,7 @@ function CadastroPost() {
                     'Authorization': token
                 }
             })
-            toast.success('Postagem atualizada com sucesso', {
+            toast.success('Comentário atualizado com sucesso', {
                 position: "top-right",
                 autoClose: 2000,
                 hideProgressBar: false,
@@ -122,7 +122,7 @@ function CadastroPost() {
                     'Authorization': token
                 }
             })
-            toast.success('Postagem cadastrada com sucesso', {
+            toast.success('Comentário cadastrado com sucesso', {
                 position: "top-right",
                 autoClose: 2000,
                 hideProgressBar: false,

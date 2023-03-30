@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { AppBar, Tab, Tabs } from '@material-ui/core';
 import {Box} from '@mui/material';
 import { TabContext, TabPanel } from '@material-ui/lab';
-import './TabPostagem.css';
+import './TabComentario.css';
 import ListaComentario from '../listaComentario/ListaComentario';
 
 

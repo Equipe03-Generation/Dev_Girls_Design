@@ -3,8 +3,9 @@
 }
 
 .fundotema{
-    background:linear-gradient(rgb(185, 74, 205),transparent) !important;
-    background-color: rgb(116, 239, 239) !important;
+    background:linear-gradient(rgb(71, 4, 102),transparent) !important;
+    background-color: rgb(7, 189, 189) !important;
+    
  }
 
  .botaocadtema{
@@ -16,6 +17,7 @@
     margin-top: 100% !important;
     
 }
+
 .formcadastro{
     width: 100vh;
     min-height: 100vh;
@@ -26,39 +28,15 @@
 }
 
 .fontecadtema{
-    color: rgb(227, 220, 230) !important;
-    font-weight: 900 !important;
+    color: white !important;
     font-family: Verdana, Geneva, Tahoma, sans-serif !important;
-    color: rgb(233, 243, 243); text-shadow: rgb(191, 0, 255) 0.1em 0.1em 0.2em !important;
-
+    text-shadow: 7px 7px 5px black!important;
 }
 .cortemacaixa{
     background-color: white !important;
 }
-.fundototalcadastrotema{
-    background-color: rgb(78, 6, 108);
-}
-.botaofinalizartema{
-    background-color: forestgreen !important;
-}
-.imagem3{
-    transition: all 0.5s;
-    cursor: pointer;
-}
-.imagem3:hover{
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-}
-.produto-container{
-    display: flex;
-    width:100%;
-    justify-content: space-around;
- }
- @media screen and (max-width: 768px) {
-    .produto-container{
-        width: 100%;
-        flex-direction: column;
-    }
-    
- }
 
+.botaofinalizarcadastrotema{
+   background-color: rgb(71, 4, 102) !important;
+   color: white !important;
+}

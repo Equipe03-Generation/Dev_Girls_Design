@@ -107,7 +107,7 @@ function CadastroPost() {
 
 
     async function findByIdPostagem(id: string) {
-        await buscaId(`/postagens/${id}`, setPostagem, {
+        await buscaId(`postagens/${id}`, setPostagem, {
             headers: {
                 'Authorization': token
             }
@@ -170,20 +170,17 @@ function CadastroPost() {
 
     return (
         <>
-<Grid className='centralizarImg produto-container'>
-            <img src='https://cdn.discordapp.com/attachments/1011758147494498377/1055504651795054712/sale-removebg-preview.png'></img>
 
-            </Grid>
-        
-        
-        <Container maxWidth="sm" className="topo produto-container">
-            <form onSubmit={onSubmit}>
-                {/* <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro postagem</Typography> */}
-                <TextField value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="titulo" label="TITULO" variant="outlined" name="titulo" margin="normal" fullWidth />
-                <TextField value={postagem.texto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="texto" label="TEXTO" name="texto" variant="outlined" margin="normal" fullWidth />
+    <Grid className='fundopost'>
+            <Grid alignItems="center" item xs={12}>
+            <form onSubmit={onSubmit}  className='formpost'>
 
-                <FormControl >
-                    <InputLabel id="demo-simple-select-helper-label">Tema </InputLabel>
+                <Typography variant="h4" className='fontpost' component="h1" align="center">Cadastro de Postagem</Typography>
+                <TextField className='corpostcaixa' value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="titulo" label="Título" name="titulo" margin="normal" fullWidth />
+                <TextField className='corpostcaixa'value={postagem.texto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="texto" label="Texto" name="texto" margin="normal" fullWidth />
+
+                <FormControl className=' caixatemaeusuario' >
+                    <InputLabel id="demo-simple-select-helper-label" className='fontpreta'>Tema </InputLabel>
                     <Select
                         labelId="demo-simple-select-helper-label"
                         id="demo-simple-select-helper"
@@ -198,8 +195,8 @@ function CadastroPost() {
                             ))
                         }
                     </Select>
-                    <FormControl>
-                    <InputLabel id="demo-simple-select-helper-label">Usuário </InputLabel>
+                    <FormControl className=''>
+                    <InputLabel id="demo-simple-select-helper-label" className='fontpreta'>Usuário </InputLabel>
                     <Select
                         labelId="demo-simple-select-helper-label"
                         id="demo-simple-select-helper"
@@ -215,14 +212,14 @@ function CadastroPost() {
                         }
                     </Select>
                     </FormControl>
-                    <FormHelperText>Escolha um tema e usuário para finalizar</FormHelperText>
-                    <Button type="submit" variant="contained" color="primary" className='botaofinalizarpost imagem3'>
+                    <FormHelperText className='fontpreta fundodafontecadastro'>Escolha um tema e usuário para finalizar</FormHelperText>
+                    <Button type="submit" variant="contained" color="primary" className='botaofinalizarcadastropost'>
                         Finalizar
                     </Button>
                 </FormControl>
             </form>
-        </Container>
-
+            </Grid>
+        </Grid>
 
         </>
     )

@@ -2,9 +2,8 @@
     text-decoration: none;
 }
 
-.botaoatualizarpost{
-    background-color: rgb(26, 147, 22) !important;
-    color: black !important;
+.botaodeletarpostagem{
+    background-color: rgb(7, 189, 189) !important;
 }
 
 .papelpost{
@@ -25,22 +24,7 @@
 .displayflex{
     display: flex !important;
 }
-.fundototallistapost{
-    background-color: rgb(78, 6, 108) !important;
+.botaoatualizarpostagem{
+    background-color: rgb(71, 4, 102) !important;
+    color: white !important;
 }
-.botaodeletarpost{
-    background-color: brown !important;
-    color: black !important;
-}
-.produto-container{
-    display: flex;
-    width:100%;
-    justify-content: space-around;
- }
- @media screen and (max-width: 768px) {
-    .produto-container{
-        width: 100%;
-        flex-direction: column;
-    }
-    
- }

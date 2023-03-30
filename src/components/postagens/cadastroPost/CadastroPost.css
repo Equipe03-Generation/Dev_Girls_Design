@@ -10,28 +10,53 @@
 .postcad{
     background-color: rgb(160, 159, 162) !important;
 }
-.botaofinalizarpost{
-    background-color: green !important;
-    color: black !important;
-}
-.imagem3{
-    transition: all 0.5s;
-    cursor: pointer;
-}
-.imagem3:hover{
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-}
-.produto-container{
-    display: flex;
-    width:100%;
-    justify-content: space-around;
- }
 
- @media screen and (max-width: 768px) {
-    .produto-container{
-        width: 100%;
-        flex-direction: column;
-    }
+.fundopost{
+    background:linear-gradient(rgb(71, 4, 102),transparent) !important;
+    background-color: rgb(7, 189, 189) !important;
     
  }
+
+.formpost{
+    width: 100vh;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center; 
+    padding: 100px;
+    padding-left: 350px !important;
+}
+
+.fontpost {
+    color: white !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    text-shadow: 7px 7px 5px black!important;
+}
+
+.corpostcaixa{
+    background-color: white !important;
+}
+
+.fontpreta {
+    color: black !important;
+    
+}
+.fundocaixa{
+    background-color: rgb(145, 142, 142);
+    
+}
+.fundodafontecadastro{
+    color: black!important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    font-size: small !important;
+}
+.botaofinalizarcadastropost{
+    background-color: rgb(71, 4, 102) !important;
+    width: 20vh !important;
+
+}
+.caixatemaeusuario{
+    width: 60vh !important;
+    min-height: 10vh !important;
+    padding: 1px !important;
+    padding-left: 10px !important;
+}

@@ -10,42 +10,67 @@
     background:linear-gradient(rgba(237, 213, 245, 0.5),transparent) !important;
     background-color: rgb(50, 4, 100) !important;
  }
+
 .tipofontsb {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size:larger;
-    color: rgb(202, 202, 202) !important;
+    color: rgb(7, 7, 7) !important;
 }
-.imagemsobre{
-    background-image: url(img/outerspace-60.webp);
-    background-repeat: no-repeat;
-    width: 100vh;
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
-}
+
 .fontesobre{
-    color: rgb(212, 200, 212) !important;
-    font-weight: 900 !important;
-    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
-    color: rgb(18, 19, 19); text-shadow: rgb(138, 90, 164) 0.1em 0.1em 0.3em !important;
- 
+   color: rgb(7, 7, 7) !important;
+   font-weight: 900 !important;
+   font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+   color: rgb(250, 252, 252); text-shadow: rgb(236, 165, 230) 0.1em 0.1em 0.3em !important;
  }
  .fonttextosobre{
-    color: white;
+    color: rgb(3, 3, 3);
     
  }
- .fundototalsobre{
-    background-color: rgb(78, 6, 108) ;
+
+ .fundosobre{
+   background:linear-gradient(rgb(71, 4, 102),transparent) !important;
+   background-color: rgb(7, 189, 189) !important;
+   
  }
- .produto-container{
+
+ .fonte2{
+   color: white !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    text-shadow: 7px 7px 5px black!important;
+ 
+ }
+
+ .forum{
+    background-image: url(img/forum.png) !important;
+    background-repeat: no-repeat !important;
+    width: 100px !important;
+    height: 100px !important;
+    background-size: cover !important;
+    background-position: center !important;
+    margin-left: 130px!important;
+ }
+
+ .tecnologia{
+    background-image: url(img/tecnologia.png) !important;
+    background-repeat: no-repeat !important;
+    width: 100px !important;
+    height: 100px !important;
+    background-size: cover !important;
+    background-position: center !important;
+    margin-left: 160px!important;
+ }
+
+ .mulher{
+    background-image: url(img/mulher.png) !important;
+    background-repeat: no-repeat !important;
+    width: 100px !important;
+    height: 100px !important;
+    background-size: cover !important;
+    background-position: center !important;
+    margin-left: 130px!important;
+ }
+
+ .flex{
     display: flex;
-    width:100%;
-    justify-content: space-around;
- }
- @media screen and (max-width: 768px) {
-    .produto-container{
-        width: 100%;
-        flex-direction: column;
-    }
-    
  }

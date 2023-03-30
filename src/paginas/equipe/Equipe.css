@@ -49,30 +49,14 @@
 .regular{
     font-family: 'Courier New', Courier, monospace !important;
 }
-
-.tipofonteq {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 .fontequipe{
-    color: rgb(253, 251, 253) !important;
-    font-weight: 900 !important;
+    color: white !important;
     font-family: Verdana, Geneva, Tahoma, sans-serif !important;
-    color: rgb(18, 19, 19); text-shadow: rgb(236, 165, 230) 0.1em 0.1em 0.3em !important;
- 
+    text-shadow: 7px 7px 5px black!important;
  }
- 
-.fundototalequipe{
-    background-color: rgb(78, 6, 108) !important;
-}
-.produto-container{
-    display: flex;
-    width:100%;
-    justify-content: space-around;
- }
- @media screen and (max-width: 768px) {
-    .produto-container{
-        width: 100%;
-        flex-direction: column;
-    }
+
+.fundoequipe{
+    background:linear-gradient(rgb(71, 4, 102),transparent) !important;
+    background-color: rgb(7, 189, 189) !important;
     
  }

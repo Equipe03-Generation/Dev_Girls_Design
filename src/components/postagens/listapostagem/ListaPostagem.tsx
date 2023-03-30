@@ -51,8 +51,7 @@ function ListaPostagem() {
 
   return (
     <>
-    <Grid container  direction='row' alignItems='center' className= 'produto-container fundototallistapost'>
-      <Grid alignItems="center" item xs={12}>
+    <Grid container className= 'displayflex'>
       {
         posts.map(post => (
           <Box m={1} className='caixalistapost'>
@@ -62,13 +61,16 @@ function ListaPostagem() {
                   Postagem
                 </Typography>
                 <Typography variant="h5" component="h2">
-                  {post.titulo}
+                  Título: {post.titulo}
                 </Typography>
                 <Typography variant="body2" component="p">
-                  {post.texto}
+                  Texto: {post.texto}
                 </Typography>
                 <Typography variant="body2" component="p">
-                  {post.tema?.assunto}
+                  Tema: {post.tema?.assunto}
+                </Typography>
+                <Typography variant="body2" component="p">
+                  Postado por: {post.usuario?.nome}
                 </Typography>
               </CardContent>
               <CardActions>
@@ -76,14 +78,14 @@ function ListaPostagem() {
 
                   <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
                     <Box mx={1}>
-                      <Button variant="contained"size='small' className="botaoatualizarpost">
+                      <Button variant="contained"size='small' className="botaoatualizarpostagem">
                         Atualizar
                       </Button>
                     </Box>
                   </Link>
                   <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
                     <Box mx={1}>
-                      <Button variant="contained" size='small' color="secondary" className='botaodeletarpost'>
+                      <Button variant="contained" size='small' color="secondary" className='botaodeletarpostagem'>
                         Deletar
                       </Button>
                     </Box>
@@ -95,7 +97,6 @@ function ListaPostagem() {
 
         ))
       } 
-      </Grid>
        </Grid>
     </>
   )

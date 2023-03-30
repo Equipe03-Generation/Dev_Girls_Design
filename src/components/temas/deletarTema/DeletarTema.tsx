@@ -73,7 +73,7 @@ function DeletarTema() {
           
   return (
     <>
-      <Box m={2} className='produto-container'>
+      <Box m={2}>
         <Card variant="outlined">
           <CardContent>
             <Box justifyContent="center">
@@ -88,12 +88,12 @@ function DeletarTema() {
           <CardActions>
             <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
               <Box mx={2}>
-                <Button onClick={sim} variant="contained" className="marginLeft botao" size='large'>
+                <Button onClick={sim} variant="contained" className="botaodetetartema" size='large'>
                   Sim
                 </Button>
               </Box>
               <Box mx={2}>
-                <Button  onClick={nao} variant="contained" size='large' color="secondary">
+                <Button  onClick={nao} variant="contained" size='large' color="secondary" className='botaonaotema'>
                   Não
                 </Button>
               </Box>
