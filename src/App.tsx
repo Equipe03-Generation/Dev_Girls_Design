@@ -19,6 +19,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import Equipe from './paginas/equipe/Equipe';
 import Sobre from './paginas/sobre/Sobre';
 import ListaUsuario from './paginas/listaUsuario/ListaUsuario';
+import ListaComentario from './components/comentarios/listaComentario/ListaComentario';
+import CadastroComentario from './components/comentarios/cadastroComentario/CadastroComentario';
+import DeletarComentario from './components/comentarios/deletarComentario/DeletarComentario';
 
 
 function App() {
@@ -47,16 +50,24 @@ function App() {
           <Route path="/posts" element={<ListaPostagem />} />
 
           <Route path="/usuarios" element={<ListaUsuario />} />
+          
+          <Route path="/coments" element={<ListaComentario />} />
 
           <Route path="/formularioPostagem" element={<CadastroPost />} />
 
           <Route path="/formularioPostagem/:id" element={<CadastroPost />} />
+
+          <Route path="/formularioComentario" element={<CadastroComentario />} />
+
+          <Route path="/formularioComentario/:id" element={<CadastroComentario />} />
 
           <Route path="/formularioTema" element={<CadastroTema />} />
 
           <Route path="/formularioTema/:id" element={<CadastroTema />} />
 
           <Route path="/deletarPostagem/:id" element={<DeletarPostagem />} />
+
+          <Route path="/deletarComentario/:id" element={<DeletarComentario />} />
 
           <Route path="/deletarTema/:id" element={<DeletarTema />} />
 
